@@ -2,6 +2,8 @@ import styles from "./register.module.css";
 import Logo from "../../images/Logo.svg";
 import BikeMan from "../../images/bike-man.svg";
 
+import { Link } from "react-router-dom";
+
 const Register = () => {
   return (
     <div className={styles.registerContainer}>
@@ -21,7 +23,9 @@ const Register = () => {
             corporation or a regular local deserves the basic standard
             necessities in achieving a high service delivery
           </p>
-          <button className={styles.btn}>Get Started</button>
+          <Link to="/">
+            <button className={styles.btn}>Get Started</button>
+          </Link>
         </section>
         <section className={styles.rightContainter}>
           <progress
@@ -49,8 +53,12 @@ const Register = () => {
               Policy, and to receive marketing communications from Envoy.
             </p>
             <section className={styles.account}>
-              <p>Got an account? Sign in</p>
-              <button className={styles.btn}>Register</button>
+              <p>
+                Got an account? <Link to="/login">Sign in</Link>{" "}
+              </p>
+              <Link to="/login">
+                <button className={styles.btn}>Register</button>
+              </Link>
             </section>
           </section>
         </section>

@@ -47,7 +47,6 @@
   color: #ffffff;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }
 /* leftContainter styles end */
 
@@ -82,13 +81,9 @@ input {
   padding: 12px;
 }
 
-.termAndCondition {
-  font-family: "DM Sans";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.003em;
-  text-align: left;
+.forgotPassword {
+ text-align: right;
+ margin-top: 0.7rem;
 }
 .account {
   display: flex;
